@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Result</title>
+</head>
+<style>
+  body {
+  background-color: #f9f6f2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #15022c; 
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+</style>
+<body>
+  <h2>Prediction Result</h2>
+  <br>
+  {% if prediction == 1 or prediction == 'spam' %}
+    <p style="color:red;">This message is <strong>SPAM</strong></p>
+  {% else %}
+    <p style="color:green;">This message is <strong>NOT SPAM</strong></p>
+  {% endif %}
+  <br><br>
+  <a href="/">Go Back</a>
+</body>
+</html>
