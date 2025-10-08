@@ -1,4 +1,4 @@
-***Language Detection App**
+***Language Detection App***
 
 A simple **NLP-based Streamlit web app** that detects the language of any given text.
 It uses CountVectorizer for text feature extraction and a Multinomial Naive Bayes (NB) model for classification.
